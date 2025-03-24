@@ -21,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-background">
+    <section className="py-16 md:py-24 bg-white dark:bg-black">
       <div className="container px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
@@ -38,17 +38,17 @@ const About = () => {
           {/* Content Side */}
           <div className="order-1 lg:order-2">
             <AnimatedSection animation="slide-up">
-              <h2 className="section-heading mb-6">About ESTG</h2>
+              <h2 className="section-heading mb-6 dark:text-white">About ESTG</h2>
             </AnimatedSection>
             
             <AnimatedSection animation="fade-in" delay={200}>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-muted-foreground mb-6 dark:text-gray-300">
                 Since 1985, Escola Superior de Tecnologia e Gestão (ESTG) has been at the forefront of technical and management education in Portugal, nurturing talent and driving innovation.
               </p>
             </AnimatedSection>
             
             <AnimatedSection animation="fade-in" delay={400}>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-muted-foreground mb-8 dark:text-gray-400">
                 Our mission is to provide transformative education that equips students with the knowledge, skills, and values needed to succeed in a rapidly evolving global landscape. Through a blend of theoretical learning and practical experience, we prepare our graduates to be innovative problem-solvers and responsible leaders.
               </p>
             </AnimatedSection>
@@ -58,7 +58,7 @@ const About = () => {
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className="text-3xl font-display font-bold text-estg-blue mb-1">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-sm text-muted-foreground dark:text-gray-400">{stat.label}</div>
                   </div>
                 ))}
               </div>

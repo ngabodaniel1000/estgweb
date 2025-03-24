@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="container px-4">
         <AnimatedSection animation="slide-up" className="text-center max-w-3xl mx-auto mb-12">
           <h5 className="text-estg-blue font-medium mb-3">GET IN TOUCH</h5>
-          <h2 className="section-heading mb-6">Contact Us</h2>
+          <h2 className="section-heading mb-6 dark:text-white">Contact Us</h2>
           <p className="text-lg text-muted-foreground">
             Have questions or need more information? We're here to help. Reach out to us and we'll get back to you as soon as possible.
           </p>
@@ -44,7 +44,7 @@ const Contact = () => {
             {/* Contact Form */}
             <AnimatedSection animation="fade-in" className="lg:col-span-3">
               <div className="bg-white dark:bg-card rounded-2xl shadow-soft p-8">
-                <h3 className="text-2xl font-display font-semibold mb-6">Send us a message</h3>
+                <h3 className="text-2xl font-display font-semibold mb-6 dark:text-white">Send us a message</h3>
                 
                 <form className="space-y-5">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -55,7 +55,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="name"
-                        className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted"
+                        className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted dark:text-white"
                         placeholder="Your name"
                       />
                     </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                       <input
                         type="email"
                         id="email"
-                        className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted"
+                        className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted dark:text-white"
                         placeholder="Your email"
                       />
                     </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                     <input
                       type="text"
                       id="subject"
-                      className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted"
+                      className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors bg-white dark:bg-muted dark:text-white"
                       placeholder="What is this regarding?"
                     />
                   </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors resize-none bg-white dark:bg-muted"
+                      className="w-full rounded-md border border-input px-4 py-2.5 focus:border-estg-blue focus:ring-1 focus:ring-estg-blue outline-none transition-colors resize-none bg-white dark:bg-muted dark:text-white"
                       placeholder="Your message..."
                     ></textarea>
                   </div>
@@ -113,22 +113,22 @@ const Contact = () => {
             {/* Contact Information */}
             <AnimatedSection animation="slide-up" className="lg:col-span-2">
               <div className="bg-estg-gray-light dark:bg-secondary rounded-2xl p-8">
-                <h3 className="text-2xl font-display font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-display font-semibold mb-6 dark:text-white">Contact Information</h3>
                 
                 <div className="space-y-6">
                   {contactInfo.map((item, index) => (
                     <div key={index} className="flex items-start">
                       <div className="mt-1 mr-4">{item.icon}</div>
                       <div>
-                        <h4 className="font-medium mb-1">{item.title}</h4>
-                        <p className="text-sm text-muted-foreground">{item.details}</p>
+                        <h4 className="font-medium mb-1 dark:text-white">{item.title}</h4>
+                        <p className="text-sm text-muted-foreground dark:text-gray-300">{item.details}</p>
                       </div>
                     </div>
                   ))}
                 </div>
                 
                 <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                  <h4 className="font-medium mb-3">Connect With Us</h4>
+                  <h4 className="font-medium mb-3 dark:text-white">Connect With Us</h4>
                   <div className="flex space-x-3">
                     <a href="#" className="p-2.5 bg-white dark:bg-muted rounded-full shadow-sm hover:bg-estg-blue hover:text-white transition-colors">
                       <svg className="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
