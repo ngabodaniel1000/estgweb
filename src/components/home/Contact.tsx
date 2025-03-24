@@ -1,7 +1,6 @@
-
 import React from 'react';
 import AnimatedSection from '../ui/AnimatedSection';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
 import { Send, Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const contactInfo = [
@@ -101,9 +100,9 @@ const Contact = () => {
                       type="submit" 
                       size="lg" 
                       className="w-full sm:w-auto"
-                      icon={<Send size={18} />}
                     >
                       Send Message
+                      <Send size={18} />
                     </Button>
                   </div>
                 </form>

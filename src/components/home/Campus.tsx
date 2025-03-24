@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import AnimatedSection from '../ui/AnimatedSection';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 const campusImages = [
@@ -74,11 +73,9 @@ const Campus = () => {
             </AnimatedSection>
             
             <AnimatedSection animation="fade-in" delay={600}>
-              <Button 
-                icon={<ArrowRight size={18} />} 
-                iconPosition="right"
-              >
+              <Button>
                 Explore Our Campus
+                <ArrowRight size={18} />
               </Button>
             </AnimatedSection>
           </div>

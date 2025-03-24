@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import AnimatedSection from '../ui/AnimatedSection';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const stats = [
@@ -65,11 +64,9 @@ const About = () => {
             </AnimatedSection>
             
             <AnimatedSection animation="fade-in" delay={800}>
-              <Button 
-                icon={<ArrowRight size={18} />} 
-                iconPosition="right"
-              >
+              <Button>
                 Learn More About Us
+                <ArrowRight size={18} />
               </Button>
             </AnimatedSection>
           </div>

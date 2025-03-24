@@ -1,9 +1,8 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -67,7 +66,7 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="ml-4">
-              <Button variant="primary" size="md">
+              <Button variant="default" size="default">
                 Student Portal
               </Button>
             </div>
@@ -104,7 +103,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="pt-2">
-              <Button variant="primary" size="md" className="w-full">
+              <Button variant="default" size="default" className="w-full">
                 Student Portal
               </Button>
             </li>

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import Button from '../ui/Button';
+// import Button from '../ui/Button';
 import AnimatedSection from '../ui/AnimatedSection';
 
 const Hero = () => {
@@ -47,18 +47,7 @@ const Hero = () => {
           
           <AnimatedSection animation="fade-in" delay={900}>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg">
-                Explore Programs
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-white/10 text-white border-white/20 hover:bg-white/20"
-                icon={<ArrowRight size={18} />}
-                iconPosition="right"
-              >
-                Virtual Tour
-              </Button>
+              
             </div>
           </AnimatedSection>
         </div>

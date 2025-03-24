@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../ui/AnimatedSection';
-import Button from '../ui/Button';
+import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const programs = [
@@ -79,12 +78,9 @@ const Programs = () => {
         </div>
         
         <AnimatedSection animation="fade-in" className="text-center">
-          <Button 
-            size="lg"
-            icon={<ArrowRight size={18} />}
-            iconPosition="right"
-          >
+          <Button size="lg">
             View All Programs
+            <ArrowRight size={18} />
           </Button>
         </AnimatedSection>
       </div>
