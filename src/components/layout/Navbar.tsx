@@ -1,8 +1,10 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
+import ThemeToggle from '../ui/ThemeToggle';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -57,7 +59,7 @@ const Navbar = () => {
                       'px-3 py-2 rounded-md text-sm font-medium transition-colors',
                       link.path === location.pathname
                         ? 'text-estg-blue'
-                        : 'text-foreground/80 hover:text-foreground hover:bg-estg-gray/10'
+                        : 'text-foreground/80 hover:text-foreground hover:bg-estg-gray/10 dark:hover:bg-gray-800/30'
                     )}
                   >
                     {link.name}
@@ -65,7 +67,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="ml-4">
+            <div className="flex items-center ml-4 gap-2">
+              <ThemeToggle />
               <Button variant="default" size="default">
                 Student Portal
               </Button>
@@ -73,12 +76,15 @@ const Navbar = () => {
           </div>
           
           {/* Mobile Menu Toggle */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
-          >
-            {isOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+            >
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
         
         {/* Mobile Menu */}
@@ -94,8 +100,8 @@ const Navbar = () => {
                   className={cn(
                     'block px-3 py-2 rounded-md text-base font-medium transition-colors',
                     link.path === location.pathname
-                      ? 'text-estg-blue bg-estg-gray-light'
-                      : 'text-foreground/80 hover:text-foreground hover:bg-estg-gray-light'
+                      ? 'text-estg-blue bg-estg-gray-light dark:bg-gray-800'
+                      : 'text-foreground/80 hover:text-foreground hover:bg-estg-gray-light dark:hover:bg-gray-800'
                   )}
                 >
                   {link.name}
