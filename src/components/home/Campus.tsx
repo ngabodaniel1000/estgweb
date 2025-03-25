@@ -57,7 +57,7 @@ const Campus = () => {
             
             <AnimatedSection animation="fade-in" delay={200}>
               <p className="text-lg text-muted-foreground mb-8">
-                Our campus provides a vibrant and supportive environment where students can learn, innovate, and grow. With state-of-the-art facilities and a beautiful setting, ESTG offers the perfect backdrop for your academic journey.
+                Our college provides a vibrant and supportive environment where students can learn, innovate, and grow. With state-of-the-art facilities and a beautiful setting, ESTG offers the perfect backdrop for your academic journey.
               </p>
             </AnimatedSection>
             
