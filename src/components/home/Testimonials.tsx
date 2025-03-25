@@ -39,7 +39,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-estg-gray-light relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-estg-gray-light dark:bg-black relative overflow-hidden">
       <div className="container px-4">
         <AnimatedSection animation="slide-up" className="text-center max-w-3xl mx-auto mb-12">
           <h5 className="text-estg-blue font-medium mb-3">TESTIMONIALS</h5>
@@ -59,7 +59,7 @@ const Testimonials = () => {
                 }`}
               >
                 {currentIndex === index && (
-                  <AnimatedSection animation="fade-in" className="bg-white rounded-2xl shadow-soft p-8 md:p-10">
+                  <AnimatedSection animation="fade-in" className="bg-white dark:bg-black border rounded-2xl shadow-soft p-8 md:p-10">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                       <div className="md:w-1/3">
                         <div className="relative">

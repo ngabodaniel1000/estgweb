@@ -37,7 +37,7 @@ const programs = [
 
 const Programs = () => {
   return (
-    <section className="py-16 md:py-24 bg-estg-gray">
+    <section className="py-16 md:py-24 bg-estg-gray dark:bg-black">
       <div className="container px-4">
         <AnimatedSection animation="slide-up" className="text-center max-w-3xl mx-auto mb-12">
           <h5 className="text-estg-blue font-medium mb-3">OUR PROGRAMS</h5>
@@ -53,7 +53,7 @@ const Programs = () => {
               key={program.id} 
               animation="fade-in" 
               delay={index * 150}
-              className="card-hover bg-white rounded-xl overflow-hidden shadow-soft"
+              className="card-hover bg-white dark:bg-black rounded-xl overflow-hidden shadow-soft"
             >
               <div className="relative aspect-[3/2] overflow-hidden">
                 <img 

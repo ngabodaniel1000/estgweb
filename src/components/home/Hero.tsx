@@ -30,12 +30,12 @@ const Hero = () => {
       <div className="container relative z-10 px-4 pt-32 pb-16 md:pt-40 md:pb-24">
         <div className="max-w-3xl">
           <AnimatedSection animation="fade-in" delay={300}>
-            <h5 className="text-estg-blue font-medium mb-3 text-sm md:text-base">ESCOLA SUPERIOR DE TECNOLOGIA E GESTÃO</h5>
+            <h5 className="text-estg-blue font-medium mb-3 text-sm md:text-base">Ecole Secondaire Technique Gisenyi</h5>
           </AnimatedSection>
           
           <AnimatedSection animation="slide-up" delay={500}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-              Shaping Tomorrow's Innovation Leaders
+              Shaping Tomorrows Digital Engineers
             </h1>
           </AnimatedSection>
           
@@ -51,7 +51,7 @@ const Hero = () => {
                 Explore Programs
                 <ArrowRight size={18} />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white/30 dark:text-white text-black hover:bg-white/10">
                 Virtual Tour
               </Button>
             </div>

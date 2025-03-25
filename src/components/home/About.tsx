@@ -7,8 +7,8 @@ import { ArrowRight } from 'lucide-react';
 const stats = [
   { value: '35+', label: 'Years of Excellence' },
   { value: '8,500+', label: 'Students' },
-  { value: '250+', label: 'Expert Faculty' },
-  { value: '95%', label: 'Employment Rate' },
+  { value: '2', label: 'Combinations' },
+  { value: '55%', label: 'Employment Rate' },
 ];
 
 const About = () => {
@@ -43,7 +43,7 @@ const About = () => {
             
             <AnimatedSection animation="fade-in" delay={200}>
               <p className="text-lg text-muted-foreground mb-6 dark:text-gray-300">
-                Since 1985, Escola Superior de Tecnologia e Gestão (ESTG) has been at the forefront of technical and management education in Portugal, nurturing talent and driving innovation.
+                Since 1985, Ecole Secondaire Technique Gisenyi has been at the forefront of technical and management education in Rubavu, nurturing talent and driving innovation.
               </p>
             </AnimatedSection>
             

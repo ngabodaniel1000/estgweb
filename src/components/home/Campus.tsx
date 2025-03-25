@@ -45,7 +45,7 @@ const Campus = () => {
   const [activeImage, setActiveImage] = useState(0);
   
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-white dark:bg-black overflow-hidden">
       <div className="container px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
